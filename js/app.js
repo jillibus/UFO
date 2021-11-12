@@ -18,4 +18,27 @@ function buildTable (data) {
             cell.text(val);
         }); // end Object.values
     }); // data.forEach
-} // end function buildTable
+}; // end function buildTable
+
+function handleClick() {
+    // Search for dates and times and grab the data
+    let date = d3.select('#datetime').property('value');
+    // set a default filter and save it
+    let filteredData = tableData;
+    // now to filter the data with the date, if found
+    if (date) {
+        // apply filter to the table data to only keep the rows where
+        // the datetime value matches the filtered value
+        filteredData = filteredData.filter(row => row.datetime === date);
+    };
+
+    // rebuild the table using the filtered data
+    // Note: if no date was entered, then filteredData will 
+    // just return the original tableData
+    buildTable(filteredData);
+}; // end of function handleClick
+
+d3.selectAll('#filter-btn').on('click', handleClick);
+
+buildTable(tableData);
+
