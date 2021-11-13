@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"UFO Finder"</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0./css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />  
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body class="bg-dark">
@@ -56,30 +56,38 @@
                     <form class="bg-dark" action="">
                         <p>Filter Search</p>
                         <ul class="list-group bg-dark"></ul>
-                            <!-- Input -->      
+                            <!-- Date -->      
                             <li class="list-group-item bg-dark">
                                 <label for="date">Enter Date</label>
                                 <input type="text" class="form-control" id="datetime" placeholder="1/10/2010" />
                             </li>
-                            <li class="list-gropu-item bg-dark">
+                            <!-- City -->    
+                            <li class="list-group-item bg-dark">
                                 <label for="city">Enter City</label>
-                                <input type="text" class="form-control" id="city" placeholder="roswell" />
+                                <input type="text" class="form-control" id="cityname" placeholder="roswell" />
                             </li>
+                            <!-- State -->    
                             <li class="list-group-item bg-dark">
                                 <label for="state">Enter a State</label>
-                                <input type="text" class="form-control" id="state" placeholder="ca" />
+                                <input type="text" class="form-control" id="statename" placeholder="ca" />
                             </li>
+                            <!-- Country -->    
                             <li class="list-group-item bg-dark">
                                 <label for="country">Enter a Country</label>
-                                <input type="text" class="form-control" id="country" placeholder="us" />
+                                <input type="text" class="form-control" id="countryname" placeholder="us" />
                             </li>
+                            <!-- Shape -->    
                             <li class="list-group-item bg-dark">
                                 <label for="shape">Enter a Shape</label>
-                                <input type="text" class="form-control" id="shape" placeholder="circle" />
+                                <input type="text" class="form-control" id="shapename" placeholder="circle" />
                             </li>
+                            <!-- Date -->    
                             <li>
                                 <button id="filter-btn" type="button" class="btn btn-dark">
                                     Filter Table
+                                </button>
+                                <button id="clear-btn" type="button" class="btn btn-dark">
+                                    Clear Table
                                 </button>
                             </li>
                         </ul>
@@ -106,8 +114,9 @@
         </div>
     </div>
     <!-- Scripts -->
+    <!--app.use("/static", express.static("./static/"));-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <script src="/static/js/data.js"></script>
-    <script src="/static/js/app.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
 </body>
 </html>
