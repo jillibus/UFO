@@ -20,6 +20,10 @@ function buildTable (data) {
     }); // data.forEach
 }; // end function buildTable
 
+// Allow user to clear the filter choices
+var clearFilter = d3.select("#clear-btn");
+clearFilter.on("click", buildTable(tableData));
+
 // function to filter data once button is clicked
 function handleClick() {
     // set a default filter and save it
@@ -27,15 +31,15 @@ function handleClick() {
     // capture the filtered choices
     var datetimeElement = d3.select("#datetime");
     var citynameElement = d3.select("#cityname");
-    var statenameElement = d3.select("#stateneme");
+    var statenameElement = d3.select("#statename");
     var countrynameElement = d3.select("#countryname");
     var shapenameElement = d3.select("#shapename");
     // capture the value given for the elements
     var datetimeValue = datetimeElement.property("value");
-    var citynameValue = citynameElement.propery("value");
-    var statenameValue = statenameElement.property("value");
-    var countrynameValue = countrynameElement.property("value")
-    var shapenameValue = shapenameElement.property("value")
+    var citynameValue = citynameElement.property("value").toLowerCase().trim();
+    var statenameValue = statenameElement.property("value").toLowerCase().trim();
+    var countrynameValue = countrynameElement.property("value").toLowerCase().trim();
+    var shapenameValue = shapenameElement.property("value").toLowerCase().trim();
     // now to filter the data with the value, if found
     // apply filter to the table data to only keep the rows where
     // the value matches the filtered value
@@ -63,7 +67,7 @@ function handleClick() {
 }; // end of function handleClick
 
 // Event listener to react to button and call function handleClick
-d3.selectAll('#filter-btn').on('click', handleClick);
+d3.selectAll('#filter-btn').on('click', handleClick());
 
 // Load tableData on startup without filtered data
 buildTable(tableData);
