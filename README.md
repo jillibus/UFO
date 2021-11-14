@@ -3,20 +3,14 @@
 ![logo](static/images/Module11-logo.png)
 
 ## Overview
-Amazing Prime Video was a platform for streaming movies and TV shows on Amazing Prime, the world's largest online retailer.  The Amazing Prime video team would like to develop an algorithm to predict which low budget movies being released will become popular so that they can buy the streaming rights at a bargain.  To inspire the team, have some fun, and connect with the local coding community, Amazing Prime has decided to sponsor a hackathon.  Providing a clean data set of movie data and asking participants to predict the popular pictures. 
 
-Britta, a member of the Amazing Prime video team, has been tasked with creating the datasets for the hackathon.  There are two data sources: a scrape of Wikipedia for all movies released since 1990, and rating data from the Movie Land's website.  She'll need to extract the data from the two sources, transform it into one clean data set, and finally load that data set into a SQL table. 
+This project was an introduction to JavaScript incorporating HTML5, CSS and Bootstrap, in order to create a dynamic webpage that allowed user input.  The topic to design around was UFO Sightings and we were given a dataset within a data.js file to use.
 
-My job is to assist Britta in creating these data sets and loading the SQL Table.
-
-
-Dana’s webpage and dynamic table are working as intended, but she’d like to provide a more in-depth analysis of UFO sightings by allowing users to filter for multiple criteria at the same time. In addition to the date, you’ll add table filters for the city, state, country, and shape.
+The application was to present the user the ability to search the "UFO Sightings" and filter the data by date, city, state, country, shape or a combination of any of those.
 
 ## Resources
 * Data Sources: data.js, nasa.jpg
 * Software: Visual Basic Studio, JavaScript, Bootstrap 4.0.0, HTML5, CSS
-
-
 
 ### RESULTS
 
@@ -35,30 +29,48 @@ We offer searching by a single or multiple criteria. The options are Date, City,
 
 ## Filter By Date
 
-To filter by date, the users enters the date, in the format of '1/10/2010' - as presented in the box as an example, and either clicks another filter box, or hits enter. The results will show as below.  The date entered was 1/5/2010 for the following results:
+To filter by date, the user enters the date, in the format of '1/10/2010' - as presented in the box as an example, and either clicks another filter box, or hits enter. The results will show as below.  The date entered was 1/5/2010 for the following results:
 
 <img src="static/images/Filter-by-date.png" width=50% height=50% />
 
 ## Filter By City
+
+To filter by city, the user enters the city, the example is shown as 'roswell', and again, either clicks another filter box, or hits enter.  The results will show up in the window after the mouse click, or enter is chosen.  The data entered was fresno for the following results:
+
 <img src="static/images/Filter-by-city.png" width=50% height=50% />
 
 ## Filter By State
+
+To filter by state, the user enters the state, the example is shown as 'ca', and again, either clicks another filter box, or hits enter.  The results will show up in the window after the mouse click, or enter is chosen.  The data entered was ca for the following results:
+
 <img src="static/images/Filter-by-state.png" width=50% height=50% />
 
-## Filter By US
+## Filter By Country
+
+To filter by country, the user enters the country code, the example is shown as 'us', and again, either clicks another filter box, or hits enter.  The results will show up in the window after the mouse click, or enter is chosen.  The data entered was us for the following results:
+
 <img src="static/images/filter-by-us.png" width=50% height=50% />
 
 ## Filter By Shape
+
+To filter by shape, the user enters the shape of the ufo, the example is shown as 'circle', and again, either clicks another filter box, or hits enter.  The results will show up in the window after the mouse click, or enter is chosen.  The data entered was triangle for the following results:
+
 <img src="static/images/Filter-by-shape.png" width=50% height=50% />
 
-## Filter By City and State
+## Filter By more than 1 area
+
+To filter by more than 1 criteria, the user enters the data into more than one field, using the examples as a guide. The results will show up in the window after the mouse click, or enter is chosen.  The data entered was city = 'fresno' and state = 'ca' for the following results:  _Note:_ I have included the development window to show the console.log to show that more than 1 filter object was chosen.
+
 <img src="static/images/filter-by-city-st.png" width=50% height=50% />
 
 ### Summary
 
-This overall project was definitally a learning experience as the regular expressions were put to the test since there was a great deal of differences in several of the columns.  The iterative process of breaking down the transform step into evaluating one column at a time, and then each data set at a time, definitely helped with the ability to look at the data in pieces.  The reuse of _function_ **extract_transform_load(wiki,kaggle,ratings)** really helped in seeing how we could repeat the use of a function for multiple data sets.
-The exercise of evaluating Wikipedia vs MovieLens was what I found most helpful when working through the columns, and making the following chart before we even started creating any functions:
+This project was a great learning experience and the module work was easy to follow along and progress to get to the end result, with buttons to run the application and clear the filters.  
 
-Just that bit of sitting down and going through each data set, helped slow down the process into steps for me to know how to go forward.
+Once going into the challenge, to remove these buttons and allow the application to dynamically work once a mouse click chose a text field, or a user hit enter, and removed all buttons, was definitely an advanced step for me to see how to eliminiate all of my steps and variables into an object and let it determine what was happening.  But this method did make for a streamlined application, clean code and an application that is very responsive to the users input, immediately upon a keystroke, so that was very cool to see.
+
+A few things I would like to add to this application:
+* One would be to put back the "clear button" I had during the module work.  That really helped in resetting my filters when I wanted to change out some values.  I was testing and chose a state, then a city and and then another city - and I ended up with a combination of 2 different cities in my filter.  The last city was of course the one that "won" the fight - but both showed up in my console.log as still in the object.
+* The other would be a drop down menu for the text boxes, it was hard to determine what dates, cities, states, countries or shapes were available to you.  So as to not enter something incorrectly, a drop down menu of "unique" values in those columns, would be a preferred way to choose what to search for easier.
 
 Jill Hughes
