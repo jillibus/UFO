@@ -13,14 +13,30 @@ My job is to assist Britta in creating these data sets and loading the SQL Table
 Dana’s webpage and dynamic table are working as intended, but she’d like to provide a more in-depth analysis of UFO sightings by allowing users to filter for multiple criteria at the same time. In addition to the date, you’ll add table filters for the city, state, country, and shape.
 
 ## Resources
-* Data Sources: data.js
-* Software: Visual Basic Studio, JavaScript
+* Data Sources: data.js, nasa.jpg
+* Software: Visual Basic Studio, JavaScript, Bootstrap 4.0.0, HTML5, CSS
 
 
 
 ### RESULTS
 
+## Search Criteria Process
+
+**Index Page**
+This is the applications startup page.  The user can re-initialize the page by either choosing the "UFO Sighting" box in the upper left corner, or by just refreshing the page in the Chrome browser.   This will reset all of the _Filter Search_ criteria to the 'default' setting examples and display the entire table of UFO sightings available.
+
+<img src="static/images/application.png" width=50% height=50% />
+
+The user is presented with the applications web-page with our opening banner of "The Truth Is Out There".  We also provide a question of "UFO Sightings: Fact or Fancy?"  We present some comments from Ufologists, to the user and ask the user what do they think?
+
+Now the user has an opportunity to search the data to see UFO sightings that have been reported.
+
+We offer searching by a single or multiple criteria. The options are Date, City, State, Country and Shape (of UFO).  You can also search more than 1 of these criteria.
+
 ## Filter By Date
+
+To filter by date, the users enters the date, in the format of '1/10/2010' - as presented in the box as an example, and either clicks another filter box, or hits enter. The results will show as below.  The date entered was 1/5/2010 for the following results:
+
 <img src="static/images/Filter-by-date.png" width=50% height=50% />
 
 ## Filter By City
