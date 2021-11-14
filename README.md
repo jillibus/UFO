@@ -21,22 +21,22 @@ Dana’s webpage and dynamic table are working as intended, but she’d like to 
 ### RESULTS
 
 ## Filter By Date
-<img src="static/images/Filter-by-date.png" width=35% height=35% />
+<img src="static/images/Filter-by-date.png" width=50% height=50% />
 
 ## Filter By City
-<img src="static/images/Filter-by-city.png" width=35% height=35% />
+<img src="static/images/Filter-by-city.png" width=50% height=50% />
 
 ## Filter By State
-<img src="static/images/Filter-by-state.png" width=35% height=35% />
+<img src="static/images/Filter-by-state.png" width=50% height=50% />
 
 ## Filter By US
-<img src="static/images/filter-by-us.png" width=35% height=35% />
+<img src="static/images/filter-by-us.png" width=50% height=50% />
 
 ## Filter By Shape
-<img src="static/images/Filter-by-shape.png" width=35% height=35% />
+<img src="static/images/Filter-by-shape.png" width=50% height=50% />
 
 ## Filter By City and State
-<img src="static/images/filter-by-city-st.png" width=35% height=35% />
+<img src="static/images/filter-by-city-st.png" width=50% height=50% />
 
 ### Summary
 
